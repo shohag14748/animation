@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+		.content{
+			position: relative;
+		}
+		.content img{
+			width: 100%;
+		}
+		.content .button img{
+			width: 13.9%;
+			position: absolute;
+			top: 41.6%;
+			right: 26.1%;
+		}
+		.overlay{
+			background: rgba(0,0,0,.5);
+			height: 100vh;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+			opacity: 0;
+		}
+		.pop{
+			position: absolute;
+			width: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			transition: 1s;
+		}
+		.pop img{
+			width: 100%;
+		}
+		.ani{
+			animation: aa .7s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes aa{
+			0%{width: 0;}
+			100%{width: 51.6%;}
+		}
+		.ani2{
+			display: block !important;
+			animation: aa2 .3s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes aa2{
+			0%{opacity: 0}
+			100%{opacity: 1}
+		}
+		button{
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: none;
+			background: red;
+			color: #fff;
+			font-weight: bold;
+			transition: .5s;
+			cursor: pointer;
+		}
+		button:hover{
+			background: orange;
+			color: red;
+		}
+	  
+	  </style>
+  </head>
+  <body>
+    <div class="content">
+    	<img src="website%20JS%20click%20module.PNG" alt="">
+    	<div class="button">
+    	<a href="">
+    		<img src="book.png" alt="">
+    	</a>
+    	</div>
+    </div>
+    <div class="overlay">
+		<div class="pop">
+			<img src="pop.png" alt="">
+			<button>X</button>
+		</div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   <script>
+	  $(document).ready(function(){
+		  $(".button").on('click',function(e){
+			  e.preventDefault();
+			  $(".pop").addClass('ani');
+			  $(".overlay").addClass('ani2');
+		  })
+		  $("button").on('click',function(e){
+			  
+			 $(".pop").removeClass('ani');
+			  $(".overlay").removeClass('ani2');
+		  })
+	  });
+	  
+	  </script>
+  </body>
+</html>
+
+
+
+
