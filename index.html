@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .svg-item {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+            display: inline-block;
+            border-radius: 8px
+        }
+
+        .svg-item::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            z-index: 1;
+            width: 500%;
+            box-sizing: border-box;
+            margin-left: -250%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(102, 100, 225, 0.10) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+            -webkit-animation: svgAnimation 1s linear infinite;
+            animation: svgAnimation 1s linear infinite;
+        }
+        
+        @-webkit-keyframes svgAnimation {
+            0% {
+                transform: translate3d(-30%, 0, 0);
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(102, 100, 225, 0.10) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+            }
+
+            100% {
+                transform: translate3d(30%, 0, 0);
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(17, 200, 147, 0.10) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+            }
+        }
+
+        @keyframes svgAnimation {
+            0% {
+                transform: translate3d(-30%, 0, 0);
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(102, 100, 225, 0.10) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+            }
+
+            100% {
+                transform: translate3d(30%, 0, 0);
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(17, 200, 147, 0.10) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="svg-item">
+        <img src="box-4.svg" alt="">
+    </div>
+    <br>
+    <div class="svg-item">
+        <img src="box-1.svg" alt="">
+    </div>
+
+</body>
+
+</html>

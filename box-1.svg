@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504" height="182" viewBox="0 0 504 182">
+    <defs>
+        <linearGradient id="a" x1="29.522%" x2="78.948%" y1="44.339%" y2="57.36%">
+            <stop offset="0%" stop-color="#ADD2EF"/>
+            <stop offset="100%" stop-color="#C4CDFD"/>
+        </linearGradient>
+        <linearGradient id="b" x1="0%" y1="100%" y2="100%">
+            <stop offset="0%" stop-color="#6664F5"/>
+            <stop offset="100%" stop-color="#11C893"/>
+        </linearGradient>
+        <linearGradient id="c" x1="0%" y1="100%" y2="100%">
+            <stop offset="0%" stop-color="#6664F5"/>
+            <stop offset="100%" stop-color="#11C893"/>
+        </linearGradient>
+        <linearGradient id="d" x1="0%" y1="100%" y2="100%">
+            <stop offset="0%" stop-color="#6664F5"/>
+            <stop offset="100%" stop-color="#11C893"/>
+        </linearGradient>
+        <linearGradient id="e" x1="0%" y1="100%" y2="100%">
+            <stop offset="0%" stop-color="#6664F5"/>
+            <stop offset="100%" stop-color="#11C893"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" fill-rule="nonzero" d="M491 .5H13C6.096.5.5 6.096.5 13v156c0 6.904 5.596 12.5 12.5 12.5h478c6.904 0 12.5-5.596 12.5-12.5V13c0-6.904-5.596-12.5-12.5-12.5zm-478 1h478c6.351 0 11.5 5.149 11.5 11.5v156c0 6.351-5.149 11.5-11.5 11.5H13c-6.351 0-11.5-5.149-11.5-11.5V13C1.5 6.649 6.649 1.5 13 1.5z"/>
+        <rect width="99" height="30" x="33" y="119" fill="url(#b)" opacity=".12" rx="15"/>
+        <rect width="268" height="18" x="33" y="37" fill="url(#c)" opacity=".12" rx="6"/>
+        <rect width="180" height="10" x="33" y="65" fill="url(#d)" opacity=".12" rx="5"/>
+        <path fill="url(#e)" d="M551.473 119.65l-51.587-52.436a8 8 0 0 0-11.32-.086c-21.042 20.744-31.935 31.426-32.68 32.044l-15.508-12.775a8 8 0 0 0-10.6.377l-34.56 32.863a.5.5 0 0 0 .344.863h155.555a.5.5 0 0 0 .356-.85z" opacity=".12" transform="rotate(-90 473.31 91.003)"/>
+    </g>
+</svg>
